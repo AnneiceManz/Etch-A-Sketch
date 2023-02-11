@@ -199,20 +199,24 @@ footer {
   color: var(--primary-light);
 }
 
-@media (max-width: 1200px) {
-  .main {
+@media (max-width: 1025px) {
+  main {
+    flex-direction: column;
     justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
   }
 }
 
 @media (max-width: 850px) {
-  .main {
+  main {
+    padding-top: 20px;
     gap: 50px;
   }
 
   .userSet {
     width: 150px;
-    gap: 16px;
+    gap: 0px;
   }
 
   .gridSize {
@@ -240,12 +244,23 @@ footer {
 }
 
 @media (max-width: 650px) {
-  title {
+  h1 {
     font-size: 50px;
+  }
+
+  body {
+    margin-bottom: 0;
   }
 
   main {
     flex-direction: column;
+    padding-top: 20px;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .userSet {
+    gap: 0;
   }
 
   #etchASketch {
@@ -257,7 +272,7 @@ footer {
     display: none;
   }
   .grid {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 }
